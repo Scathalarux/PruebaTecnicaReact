@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
     "vite": "^7.2.4"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.1.1",
     "eslint": "^9.39.1",
+    "playwright": "^1.56.1",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   }

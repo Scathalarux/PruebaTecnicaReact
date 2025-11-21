@@ -26,7 +26,12 @@ export function App() {
           />
         )}
       </section>
-      <section id="seccion2">
+    </main>
+  );
+}
+
+/*
+<section id="seccion2">
         {fact && <p>Hecho: {fact}</p>}
         {imageUrl && (
           <img
@@ -35,6 +40,4 @@ export function App() {
           />
         )}
       </section>
-    </main>
-  );
-}
+      */
