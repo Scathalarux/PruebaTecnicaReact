@@ -73,3 +73,8 @@ Proyecto de React realizado para la consecución de pasos indicada en una prueba
 
 2. Enunciado
 > Recupera un hecho aleatorio de gatos de la primera API y muestra una imagen de un gato con la primera palabra del hecho recuperado usando la segunda API
+
+3. Tareas
+- Recuperar un hecho aleatorio de gatos de Facts Random
+- Recuperar la primera palabra del hecho
+- Mostrar una imagen de un gato de Imagen Random
