@@ -1,28 +1,18 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getRandomFact } from "./services/facts";
+import {useCatImage} from './useCatImage';
 import "./App.css";
 
 //const CAT_ENDPOINT_IMAGE_URL = `https://cataas.com/cat/says/${firstWord}?json=true`;
 const CAT_PREFIX_IMAGE_URL = "https://cataas.com";
 
 /*
-    Custom hook
+    Custom hooks
 
     Se pueden llamar a otros hooks dentro
 */
-function useCatImage({ fact }) {
-  const [imageUrl, setImageUrl] = useState("");
 
-  useEffect(() => {
-    if (!fact) return;
-    const firstWord = fact.split(" ")[0];
-    fetch(`https://cataas.com/cat/says/${firstWord}?json=true`)
-      .then((response) => response.json())
-      .then((data) => setImageUrl(data.url));
-  }, [fact]);
 
-  return { imageUrl };
-}
 
 export function App() {
   const [fact, setFact] = useState("");
