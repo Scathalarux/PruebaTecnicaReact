@@ -12,20 +12,23 @@ Proyecto de React realizado para la consecución de pasos indicada en una prueba
 
 
 2. Configuración de *vite.config.js*
-> `import {defineConfig} from 'vite';`
-> `import react from '@vitejs/plugin-react';;`
->
-> `export default defineConfig({`
-> `    plugins: [react()]`
-> `});`
+```
+    import {defineConfig} from 'vite';
+    import react from '@vitejs/plugin-react';;
 
+    export default defineConfig({
+        plugins: [react()]
+    });
+```
 
 3. Configuración de *main.js*
-> `import {createRoot} from 'react-dom/client'`
-> 
-> `const root = createRoot(document.getElementById('app'));`
-> 
-> `root.render(<h1>Hola mundo</h1>);`
+```
+    import {createRoot} from 'react-dom/client'
+
+    const root = createRoot(document.getElementById('app'));
+
+    root.render(<h1>Hola mundo</h1>);
+```
 
 4. Activación de *JSX*
 - Cambio en el nombre de *main.js* por *main.jsx*
@@ -33,27 +36,29 @@ Proyecto de React realizado para la consecución de pasos indicada en una prueba
 > <script type="module" src="/src/main.jsx"></script>
 
 5. Asegurarnos de que tenemos los datos mínimos en *package.json*
-> {
->   "name": "prueba-tecnica",
->   "private": true,
->   "version": "0.0.0",
->   "type": "module",
->   "scripts": {
->     "dev": "vite",
->     "build": "vite build",
->     "lint": "eslint .",
->     "preview": "vite preview"
->   },
->   "dependencies": {
->     "@vitejs/plugin-react": "5.1.1",
->     "react": "19.2.0",
->     "react-dom": "19.2.0"
->   }
-> }
+```
+    {
+      "name": "prueba-tecnica",
+      "private": true,
+      "version": "0.0.0",
+      "type": "module",
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
+      },
+      "dependencies": {
+        "@vitejs/plugin-react": "5.1.1",
+        "react": "19.2.0",
+        "react-dom": "19.2.0"
+      }
+    }
+```
 
 ---
 
-*** ⚠️ No olvidar 👀 ***
+ ⚠️ ***No olvidar*** 👀 
 * Mucha atención a la ubicación en la que estamos
 * Recomendable hacer uso de ESLint
 
